@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .container {
+                width: 500px;
+                margin: 30px auto;
+            }
+            li.hot::after {
+                content: "NEW!!";
+                font-size: x-small;
+                padding: 2px 4px;
+                margin: 0 10px;
+                border-radius: 2px;
+                background: #f00;
+                color: #fff;
+            }
+            .accent::before {
+                content: "★";
+              
+            
+                background: #f00;
+                color: #fff;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>제품목록</h1>
+            <ul>
+                <li class="hot">제품A</li>
+                <li>제품B</li>
+                <li class="hot">제품C</li>
+                <li>제품D</li>
+            </ul>
+        </div>       
+    </body>
+</html>

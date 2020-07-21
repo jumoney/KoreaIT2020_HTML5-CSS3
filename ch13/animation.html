@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .container {width: 500px; height: 100px auto;}
+            .box{width: 60px; height: 60px; margin: 60px;
+            animation: ratate 1.5s infinite, background 1.5s infinite alternate;}
+            /*animation*/
+            @keyframes rotate{
+                0%{transform: perspective(120px) rotateX(0deg) rotateY(0deg);}
+                50%{transform: perspective(120px) rotateX(-180deg) rotateY(0deg);}
+                100%{transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);}
+            }
+            @keyframes background {
+                0% { background-color: red;}
+                50% { background-color: green;}
+                100%{background-color: blue;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </body>
+</html>

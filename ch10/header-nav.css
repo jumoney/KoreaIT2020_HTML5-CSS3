@@ -1,0 +1,72 @@
+/* header 부분 */
+.container {
+    width: 960px; margin: 0 auto; border: 1px solid #ccc;
+}
+header {position: relative; height: 280px; background: url('10/bg.png') no-repeat; background-position: left top; }
+header h1 {
+    position: absolute; right: 20px;
+    top: 80px;
+    color: #ffffcc;
+    text-shadow: 2px, 2px, 3px, #000000;
+    font-size: 2em;
+}
+header h2 {
+    position: absolute; right: 20px;
+    top: 120px;
+    color: yellow;
+    font-size: 1.5em;
+    text-shadow: 2px, 2px, 3px, gray;
+}
+/*nav 부분*/
+nav {
+    position: relative; width: 960px; height: 60px; background-color: black;
+    margin-top: -16px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    width: 24%;
+    margin-top: 17px;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: mediumaquamarine;
+}
+/*article, section, aside - 본문 */
+.content{
+    width: 720px;
+    padding: 10px;
+    float: left;
+    display: inline-block;
+}
+.content p, .sidebar p {
+    text-align: justify;
+}
+.sidebar {
+    width: 200px;
+    padding: 10px;
+    float: right;
+    background-color: rgba(50, 200, 50, 0.2);
+    margin: 10px 0;
+}
+.sidebar img{
+    border: rgb(50, 200, 50) 1px solid; margin-bottom: 10px;
+}
+footer {
+   width: 960px; height: 150px;
+   clear: both;
+   background-color: rgb(20, 20, 20);
+   text-align: center;
+}
+
+footer p {
+    padding-top: 20px;
+    color: white;
+    line-height: 5px;
+}

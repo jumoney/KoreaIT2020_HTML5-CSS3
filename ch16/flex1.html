@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            /* width: 500px;  */
+            margin: 50px auto; display: flex; background-color: yellow; height: 300px;
+            
+            /* justify-content: space-between;  */
+            /*교차축(y축, 세로) 기준 배치 방법 지정*/
+            align-content: flex-start;
+        }
+        #box1, #box2, #box3 {
+            width: 100px; height: 50px; background-color: gray;
+            border: 1px solid black;
+        }
+        #box1{
+            height: 80px;
+            align-self: flex-start;
+        }
+        h2 {
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1"><h2>1</h2></div>
+        <div id="box2"><h2>2</h2></div>
+        <div id="box3"><h2>3</h2></div>
+    </div>
+</body>
+</html>
